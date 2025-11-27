@@ -677,12 +677,12 @@ function createBall(index, weaponKey, weapon, skinIndex, x, y, vx, isEvil = fals
     // Try to load specific skin image, fallback to default if it fails
     const testImg = new Image();
     testImg.onload = () => {
-      ball.weaponElement.style.backgroundImage = `url('Icons/ball/${weaponKey}_${skinName}.png')`;
+      ball.weaponElement.style.backgroundImage = `url('ball/${weaponKey}_${skinName}.png')`;
     };
     testImg.onerror = () => {
-      ball.weaponElement.style.backgroundImage = `url('Icons/ball/${weaponKey}_${defaultName}.png')`;
+      ball.weaponElement.style.backgroundImage = `url('ball/${weaponKey}_${defaultName}.png')`;
     };
-    testImg.src = `Icons/ball/${weaponKey}_${skinName}.png`;
+    testImg.src = `ball/${weaponKey}_${skinName}.png`;
     
     ball.weaponElement.style.cssText = `
       position: absolute;
