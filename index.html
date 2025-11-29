@@ -65,11 +65,15 @@
 <body>
     <h1>Fighting Weapon Balls!</h1>
     <p>Watch balls with weapons fight to their doom! This game is inspired by Weapon Ball Fight on the Play Store. Try that out!</p>
-    <button class="button" id="shopButton">Shop</button>
-    <button class="button" id="mapButton">Maps</button>
-    <button class="button" id="gamemodeButton">Gamemodes</button>
-    <button class="button" id="settingsButton" style="display:none;">Settings</button>
-    <button class="button" id="startGame">Start Game</button>
+    <div id="buttonContainer">
+        <button class="button" id="shopButton">Shop</button>
+        <button class="button" id="mapButton">Maps</button>
+        <button class="button" id="gamemodeButton">Gamemodes</button>
+        <button class="button" id="achievementsButton" style="display:none;">Achievements</button>
+        <button class="button" id="settingsButton" style="display:none;">Settings</button>
+        <button class="button" id="startGame">Start Game</button>
+    </div>
+    <div id="vsDisplay" style="display: none; font-size: 18px; font-weight: bold; color: #2c3e50; margin: 5px;"></div>
     <div class="game-area" id="gameArea">
         <canvas id="gameCanvas" width="250" height="250"></canvas>
     </div>
